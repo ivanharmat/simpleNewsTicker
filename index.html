@@ -5,19 +5,16 @@
 </head>
 <body>
 
-<div id="news">
-	<p>
-		<a href="http://www.examiner.com/article/the-second-war-of-independence-has-been-declared" target="_blank">The Second War of Independence has been declared</a>
-	</p>
-	<p>
-		<a href="http://dailycaller.com/2013/01/11/hannity-foresees-states-leaving-union-if-federal-government-continues-radicalized-abusive-pattern-video/" target="_blank">Hannity foresees states leaving union</a>
-	</p>
-	<p>
-		<a href="http://detroit.cbslocal.com/2013/01/12/riot-breaks-out-at-housing-assistance-event-in-taylor/" target="_blank">Riot Breaks Out At Housing Assistance Event</a>
-	</p>
-	<p>
-		<a href="http://www.wnd.com/2013/01/civil-wars-a-brewin/" target="_blank">CIVIL WAR'S A-BREWIN'</a>
-	</p>
+<div id="slideshow">
+	<img src="http://dummyimage.com/600x400/d100d1/fff.png&text=Image+1">
+	<img src="http://dummyimage.com/600x400/0011cf/fff.png&text=Image+2">
+	<img src="http://dummyimage.com/600x400/45d6a6/fff.png&text=Image+3">
+	<img src="http://dummyimage.com/600x400/e67009/fff.png&text=Image+4">
+	<img src="http://dummyimage.com/600x400/47eaff/fff.png&text=Image+5">
+	<img src="http://dummyimage.com/600x400/fff647/fff.png&text=Image+6">
+	<img src="http://dummyimage.com/600x400/ff4747/fff.png&text=Image+7">
+	<img src="http://dummyimage.com/600x400/9614c9/fff.png&text=Image+8">
+	<img src="http://dummyimage.com/600x400/88c714/fff.png&text=Image+9">
 </div>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
@@ -25,7 +22,11 @@
 
 <script type="text/javascript">
 	$(document).ready(function(){
-		$('#news').simpleNewsTicker();
+		$('#slideshow').simpleNewsTicker({
+			'delay': 1500,
+			'fadeSpeed': 500,
+			'element' : 'img'
+		});
 	});
 </script>
 
